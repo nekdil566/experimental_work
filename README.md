@@ -2,54 +2,36 @@
 
 ## Overview
 
-This repository contains the experimental work and datasets for analyzing sentiment and emotion in user reviews. The project explores various deep learning models such as GRU, BiGRU, LSTM, BiLSTM, CNN, and RNN. Additionally, sentiment analysis using VADER is implemented. The datasets include annotations from both ChatGPT and manual labeling processes. This repository provides Jupyter notebooks for implementation and experimentation, alongside theoretical discussions in PDF format.
+This repository contains experimental work and datasets for analyzing sentiment and emotion in user reviews. The project explores deep learning models like GRU, BiGRU, LSTM, BiLSTM, CNN, and RNN, and includes sentiment analysis using VADER. The datasets have been annotated both manually and by ChatGPT. The repository provides Jupyter notebooks for model implementation and experimentation, as well as theoretical discussions in PDF format.
 
 ## Directory Structure
 
 ### Code Files
-- **Algorithm 1 Processing Reviews for Sentiment.ipynb**:
-  Notebook focused on the preprocessing of user reviews to prepare the data for sentiment analysis.
+- **Algorithm 1 Processing Reviews for Sentiment.ipynb**: Preprocesses user reviews to prepare data for sentiment analysis.
 
-- **GRU, BiGRU, Chatgpt, Manual_annoated_ dataset.ipynb**:
-  Implements GRU and BiGRU models for sentiment analysis. Compares performance on ChatGPT-annotated and manually annotated datasets.
+- **BIGRU_ChatGPT annotatted datset.ipynb** & **BIGRU__manual_annotated_dataset.ipynb**: Implement BiGRU models for ChatGPT-annotated and manually annotated datasets, respectively, to compare model performance across annotation methods.
 
-- **CNN Model for chatgpt annotated dataset.ipynb**:
-  Develops a CNN model for analyzing ChatGPT-annotated datasets.
+- **CNN Model for chatgpt annotated dataset.ipynb** & **CNN for Mnaul annotatted dataset.ipynb**: Develop CNN models for analyzing ChatGPT and manually annotated datasets separately, comparing performance across annotation techniques.
 
-- **CNN for Manual Annotated dataset.ipynb**:
-  Implements a CNN model specifically for manually annotated datasets. Provides performance comparison with ChatGPT-annotated datasets.
+- **GRU_Chatgpt_dataset_model.ipynb** & **GRU_Manual_dataset_model.ipynb**: Implement GRU models for ChatGPT and manually annotated datasets, with performance comparisons.
 
-- **Grid search for(chatgptdataset).ipynb**:
-  Performs hyperparameter tuning using grid search for ChatGPT datasets. Optimizes parameters such as learning rate and batch size.
+- **Grid search for(chatgptdataset).ipynb**: Hyperparameter tuning for the ChatGPT-annotated dataset, optimizing parameters like learning rate and batch size.
 
-- **Grid search For GRU.ipynb**:
-  Optimizes GRU model parameters through grid search.
+- **LSTM, BILSTM, RNN for ChatGPt Dataset.ipynb** & **LSTM,BILSTM for Manual Dataset.ipynb**: Implement LSTM, BiLSTM, and RNN models for sentiment analysis on ChatGPT and manually annotated datasets, evaluating performance using metrics such as precision, recall, and F1-score.
 
-- **LSTM, BILSTM, RNN for ChatGPt Dataset.ipynb**:
-  Implements LSTM, BiLSTM, and RNN models for sentiment analysis on ChatGPT datasets. Evaluates their performance with metrics such as precision, recall, and F1-score.
+- **RNN Model_chatgpt_annotated.ipynb** & **RNN Model_manual_annotated_dataset.ipynb**: Build RNN models for sentiment analysis on both ChatGPT and manually annotated datasets.
 
-- **LSTM, BILSTM for Manual Dataset.ipynb**:
-  Focuses on LSTM and BiLSTM models for manually annotated datasets. Addresses class imbalance using sampling techniques.
-
-- **RNN_Manual_data.ipynb**:
-  Builds RNN models for sentiment analysis on manually annotated datasets.
-
-- **Vadar setiment anylysis.ipynb**:
-  Implements VADER sentiment analysis on the datasets. Outputs include polarity scores and sentiment classifications.
+- **Vadar setiment anylysis.ipynb**: Uses VADER for sentiment analysis, providing polarity scores and sentiment classifications.
 
 ### PDF Files
-- **Understanding Emotions in End.pdf**:
-  Theoretical discussion on understanding emotions in user reviews. Provides insights into emotion detection strategies.
+- **Understanding Emotions in End.pdf**: Theoretical discussion on understanding emotions in user reviews, offering insights into emotion detection strategies.
 
 ### Datasets
-- **Dataset_chatgpt_manul_final.csv**:
-  A combined dataset with ChatGPT-annotated and manually annotated sentiment labels.
+- **Dataset_chatgpt_manul_final.csv**: A combined dataset containing ChatGPT and manually annotated sentiment labels.
 
-- **end-user reviews dataset.csv**:
-  Contains end-user reviews labeled with sentiment and emotion annotations.
+- **end-user reviews dataset.csv**: End-user reviews labeled with sentiment and emotion annotations.
 
-- **vadar_resutls.csv**:
-  Results generated from applying VADER sentiment analysis.
+- **vadar_resutls.csv**: Results generated from applying VADER sentiment analysis.
 
 ## Requirements
 
@@ -68,24 +50,23 @@ To run the code provided in this repository, you will need:
 ## Running the Analysis
 
 1. **Explore the Datasets**:
-   - Load the datasets such as `Dataset_chatgpt_manul_final.csv` and `end-user reviews dataset.csv` to understand their structure.
+   - Load datasets such as `Dataset_chatgpt_manul_final.csv` and `end-user reviews dataset.csv` to understand their structure.
    - Visualize data distributions using tools like `matplotlib` or `seaborn`.
 
 2. **Perform Sentiment Analysis**:
-   - Use the **Vadar setiment anylysis.ipynb** notebook for basic sentiment analysis using VADER.
-   - Experiment with deep learning models such as GRU, CNN, or LSTM in notebooks like **GRU, BiGRU, Chatgpt, Manual_annoated_ dataset.ipynb**.
+   - Use **Vadar setiment anylysis.ipynb** for VADER-based sentiment analysis.
+   - Experiment with deep learning models like GRU, CNN, or LSTM in notebooks such as **GRU_Chatgpt_dataset_model.ipynb**.
 
 3. **Optimize Hyperparameters**:
-   - Use **Grid search for(chatgptdataset).ipynb** or **Grid search For GRU.ipynb** to tune model parameters for better accuracy.
+   - Use **Grid search for(chatgptdataset).ipynb** to tune model parameters for improved accuracy.
 
 4. **Compare Models**:
-   - Evaluate the performance of various models (e.g., CNN, RNN, BiGRU, BiLSTM) using metrics like accuracy and confusion matrices.
-   - Analyze the impact of annotation techniques (manual vs. ChatGPT) on model performance.
+   - Evaluate model performance (e.g., CNN, RNN, BiGRU, BiLSTM) using metrics like accuracy and confusion matrices.
+   - Analyze how annotation methods (manual vs. ChatGPT) affect model performance.
 
-5. **Leverage PDF Resources**:
-   - Theoretical insights and reusable code snippets are available in PDFs like **Understanding Emotions in End.pdf**.
+5. **Utilize PDF Resources**:
+   - Refer to **Understanding Emotions in End.pdf** for theoretical insights and additional analysis techniques.
 
 ## Contact Information
 
 For questions or feedback regarding this project, please contact [naikdil2003@gmail.com].
-
